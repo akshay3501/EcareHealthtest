@@ -11,6 +11,7 @@ function formatDateToMMDDYYYY(date) {
 }
 
 test('Add new patient flow', async ({ page }) => {
+  // Add New patient flow
   const loginPage = new LoginPage(page);
   const patientPage = new PatientPage(page);
 
