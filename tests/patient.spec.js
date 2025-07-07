@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from './pages/LoginPage';
 import { PatientPage } from './pages/PatientPage';
+import { AppointmentPage } from './pages/AppointmentPage';
 import { faker } from '@faker-js/faker';
 
 function formatDateToMMDDYYYY(date) {
@@ -41,4 +42,18 @@ test('Add new patient flow', async ({ page }) => {
   // Go to patient list and check for the new patient
   await page.goto('https://stage_ketamin.uat.provider.ecarehealth.com/app/provider/patients');
   await expect(page.getByText(firstName)).toBeVisible({ timeout: 10000 });
+});
+
+test('Schedule a new appointment', async ({ page }) => {
+  const loginPage = new LoginPage(page);
+  const appointmentPage = new AppointmentPage(page);
+
+  await loginPage.goto();
+  await loginPage.login('amol.shete+TP@medarch.com', 'Test@123$');
+  await appointmentPage.scheduleAppointment(
+    'akshay',
+    'New Patient Visit',
+    'saddas',
+    'bhus'
+  );
 }); 
