@@ -40,6 +40,7 @@ test('Add new patient flow', async ({ page }) => {
   await patientPage.savePatient();
 
   // Go to patient list and check for the new patient
+  console.log('Expecting patient name:', firstName);
   await page.goto('https://stage_ketamin.uat.provider.ecarehealth.com/app/provider/patients');
   await expect(page.getByText(firstName)).toBeVisible({ timeout: 10000 });
 });

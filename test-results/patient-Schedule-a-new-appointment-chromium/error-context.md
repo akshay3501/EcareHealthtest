@@ -1,0 +1,68 @@
+# Page snapshot
+
+```yaml
+- dialog:
+  - heading [level=2]
+  - text: July 2025
+  - button "calendar view is open, switch to year view"
+  - button "Previous month" [disabled]
+  - button "Next month"
+  - grid "July 2025":
+    - row "Sunday Monday Tuesday Wednesday Thursday Friday Saturday":
+      - columnheader "Sunday": S
+      - columnheader "Monday": M
+      - columnheader "Tuesday": T
+      - columnheader "Wednesday": W
+      - columnheader "Thursday": T
+      - columnheader "Friday": F
+      - columnheader "Saturday": S
+    - rowgroup:
+      - row "1 2 3 4 5":
+        - gridcell
+        - gridcell
+        - gridcell "1" [disabled]
+        - gridcell "2" [disabled]
+        - gridcell "3" [disabled]
+        - gridcell "4" [disabled]
+        - gridcell "5" [disabled]
+      - row "6 7 8 9 10 11 12":
+        - gridcell "6" [disabled]
+        - gridcell "7" [disabled]
+        - gridcell "8"
+        - gridcell "9" [selected]
+        - gridcell "10"
+        - gridcell "11"
+        - gridcell "12"
+      - row "13 14 15 16 17 18 19":
+        - gridcell "13"
+        - gridcell "14"
+        - gridcell "15"
+        - gridcell "16"
+        - gridcell "17"
+        - gridcell "18"
+        - gridcell "19"
+      - row "20 21 22 23 24 25 26":
+        - gridcell "20"
+        - gridcell "21"
+        - gridcell "22"
+        - gridcell "23"
+        - gridcell "24"
+        - gridcell "25"
+        - gridcell "26"
+      - row "27 28 29 30 31":
+        - gridcell "27"
+        - gridcell "28"
+        - gridcell "29"
+        - gridcell "30"
+        - gridcell "31"
+        - gridcell
+        - gridcell
+  - button "12:30 AM - 01:00 AM":
+    - paragraph: 12:30 AM - 01:00 AM
+  - button "02:00 AM - 02:30 AM":
+    - paragraph: 02:00 AM - 02:30 AM
+  - button "04:00 AM - 04:30 AM":
+    - paragraph: 04:00 AM - 04:30 AM
+  - button "04:30 AM - 05:00 AM":
+    - paragraph: 04:30 AM - 05:00 AM
+```

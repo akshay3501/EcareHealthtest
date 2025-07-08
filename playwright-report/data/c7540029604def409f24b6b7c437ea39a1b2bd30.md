@@ -1,0 +1,271 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "Company-Logo"
+  - tablist:
+    - tab "Dashboard" [disabled]:
+      - paragraph: Dashboard
+    - tab "Scheduling":
+      - paragraph: Scheduling
+    - tab "Patients" [selected]:
+      - paragraph: Patients
+    - tab "Communications":
+      - paragraph: Communications
+    - tab "Collaboration":
+      - paragraph: Collaboration
+    - tab "Billing":
+      - paragraph: Billing
+    - tab "Reports":
+      - paragraph: Reports
+    - tab "Library":
+      - paragraph: Library
+    - tab "Settings":
+      - paragraph: Settings
+  - text: Create
+  - separator
+  - textbox "Find Patient"
+  - button
+  - button
+  - button
+  - img "admin image"
+- paragraph: Patients
+- textbox "Search Patient"
+- button
+- button "Export List":
+  - paragraph: Export List
+- button "Filters":
+  - paragraph: Filters
+- grid:
+  - rowgroup:
+    - row "Select all rows Patient ID Flag Patient Name Date Of Birth Contact Primary Care Provider Next Appointment Last Appointment Valid Insurance Status":
+      - columnheader "Select all rows":
+        - checkbox "Select all rows"
+      - columnheader "Patient ID"
+      - columnheader "Flag"
+      - columnheader "Patient Name"
+      - columnheader "Date Of Birth"
+      - columnheader "Contact"
+      - columnheader "Primary Care Provider"
+      - columnheader "Next Appointment"
+      - columnheader "Last Appointment"
+      - columnheader "Valid Insurance"
+      - columnheader "Status"
+  - rowgroup:
+    - row "Select row 68B6CF10 - Daron Emmerich 25 yrs - Male 08/15/1999 (854) 114-1111 Daron_Emmerich@gmail.com - - Active":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "68B6CF10":
+        - paragraph: 68B6CF10
+      - cell "-"
+      - cell "Daron Emmerich 25 yrs - Male":
+        - paragraph: Daron Emmerich
+        - paragraph: 25 yrs - Male
+      - cell "08/15/1999"
+      - cell "(854) 114-1111 Daron_Emmerich@gmail.com":
+        - paragraph: (854) 114-1111
+        - paragraph: Daron_Emmerich@gmail.com
+      - cell:
+        - paragraph
+        - paragraph
+      - cell "-"
+      - cell "-"
+      - cell
+      - cell "Active":
+        - paragraph: Active
+    - row "Select row F72E108E - Lina Kulkarni 35 yrs - Female 01/01/1990 (827) 654-4400 lina@mailinator.com - - Active":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "F72E108E":
+        - paragraph: F72E108E
+      - cell "-"
+      - cell "Lina Kulkarni 35 yrs - Female":
+        - paragraph: Lina Kulkarni
+        - paragraph: 35 yrs - Female
+      - cell "01/01/1990"
+      - cell "(827) 654-4400 lina@mailinator.com":
+        - paragraph: (827) 654-4400
+        - paragraph: lina@mailinator.com
+      - cell:
+        - paragraph
+        - paragraph
+      - cell "-"
+      - cell "-"
+      - cell
+      - cell "Active":
+        - paragraph: Active
+    - row "Select row 44A4FB94 - Francisca Becker 57 yrs - Male 01/17/1968 (854) 114-1111 Francisca_Becker@hotmail.com - - Active":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "44A4FB94":
+        - paragraph: 44A4FB94
+      - cell "-"
+      - cell "Francisca Becker 57 yrs - Male":
+        - paragraph: Francisca Becker
+        - paragraph: 57 yrs - Male
+      - cell "01/17/1968"
+      - cell "(854) 114-1111 Francisca_Becker@hotmail.com":
+        - paragraph: (854) 114-1111
+        - paragraph: Francisca_Becker@hotmail.com
+      - cell:
+        - paragraph
+        - paragraph
+      - cell "-"
+      - cell "-"
+      - cell
+      - cell "Active":
+        - paragraph: Active
+    - row "Select row 6F8D71C2 - Aniket Testing 35 yrs - Male 02/01/1990 (987) 654-3215 atesting@mailinator.com - - Active":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "6F8D71C2":
+        - paragraph: 6F8D71C2
+      - cell "-"
+      - cell "Aniket Testing 35 yrs - Male":
+        - paragraph: Aniket Testing
+        - paragraph: 35 yrs - Male
+      - cell "02/01/1990"
+      - cell "(987) 654-3215 atesting@mailinator.com":
+        - paragraph: (987) 654-3215
+        - paragraph: atesting@mailinator.com
+      - cell:
+        - paragraph
+        - paragraph
+      - cell "-"
+      - cell "-"
+      - cell
+      - cell "Active":
+        - paragraph: Active
+    - row "Select row B4E28F9C - Brant Conn 37 yrs - Male 12/27/1987 (854) 114-1111 Brant.Conn60@hotmail.com - - Active":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "B4E28F9C":
+        - paragraph: B4E28F9C
+      - cell "-"
+      - cell "Brant Conn 37 yrs - Male":
+        - paragraph: Brant Conn
+        - paragraph: 37 yrs - Male
+      - cell "12/27/1987"
+      - cell "(854) 114-1111 Brant.Conn60@hotmail.com":
+        - paragraph: (854) 114-1111
+        - paragraph: Brant.Conn60@hotmail.com
+      - cell:
+        - paragraph
+        - paragraph
+      - cell "-"
+      - cell "-"
+      - cell
+      - cell "Active":
+        - paragraph: Active
+    - row "Select row 3AAA34E6 - Shubhangi Gade 26 yrs - Female 01/01/1999 (987) 654-4400 veakerha9456@thinkitive.com - - Active":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "3AAA34E6":
+        - paragraph: 3AAA34E6
+      - cell "-"
+      - cell "Shubhangi Gade 26 yrs - Female":
+        - paragraph: Shubhangi Gade
+        - paragraph: 26 yrs - Female
+      - cell "01/01/1999"
+      - cell "(987) 654-4400 veakerha9456@thinkitive.com":
+        - paragraph: (987) 654-4400
+        - paragraph: veakerha9456@thinkitive.com
+      - cell:
+        - paragraph
+        - paragraph
+      - cell "-"
+      - cell "-"
+      - cell
+      - cell "Active":
+        - paragraph: Active
+    - row "Select row 5A23C42E - Harry Brook 25 yrs - Male 12/12/1999 (911) 657-7700 brook@mailinator.com - - Active":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "5A23C42E":
+        - paragraph: 5A23C42E
+      - cell "-"
+      - cell "Harry Brook 25 yrs - Male":
+        - paragraph: Harry Brook
+        - paragraph: 25 yrs - Male
+      - cell "12/12/1999"
+      - cell "(911) 657-7700 brook@mailinator.com":
+        - paragraph: (911) 657-7700
+        - paragraph: brook@mailinator.com
+      - cell:
+        - paragraph
+        - paragraph
+      - cell "-"
+      - cell "-"
+      - cell
+      - cell "Active":
+        - paragraph: Active
+    - row "Select row E835C03D - Matt Mardock 25 yrs - Female 07/07/2000 (897) 537-0911 matt01@mailinator.com - - Active":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "E835C03D":
+        - paragraph: E835C03D
+      - cell "-"
+      - cell "Matt Mardock 25 yrs - Female":
+        - paragraph: Matt Mardock
+        - paragraph: 25 yrs - Female
+      - cell "07/07/2000"
+      - cell "(897) 537-0911 matt01@mailinator.com":
+        - paragraph: (897) 537-0911
+        - paragraph: matt01@mailinator.com
+      - cell:
+        - paragraph
+        - paragraph
+      - cell "-"
+      - cell "-"
+      - cell
+      - cell "Active":
+        - paragraph: Active
+    - row "Select row 55A97408 - Katie Smith 26 yrs - Female 01/01/1999 (987) 654-3210 katie@mailinator.com - - Active":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "55A97408":
+        - paragraph: 55A97408
+      - cell "-"
+      - cell "Katie Smith 26 yrs - Female":
+        - paragraph: Katie Smith
+        - paragraph: 26 yrs - Female
+      - cell "01/01/1999"
+      - cell "(987) 654-3210 katie@mailinator.com":
+        - paragraph: (987) 654-3210
+        - paragraph: katie@mailinator.com
+      - cell:
+        - paragraph
+        - paragraph
+      - cell "-"
+      - cell "-"
+      - cell
+      - cell "Active":
+        - paragraph: Active
+    - row "Select row 7CD26A7F - Yadnesh Chaudhary 25 yrs - Male 01/06/2000 (987) 656-8974 yadnesh@mailinator.com - - Active":
+      - cell "Select row":
+        - checkbox "Select row"
+      - cell "7CD26A7F":
+        - paragraph: 7CD26A7F
+      - cell "-"
+      - cell "Yadnesh Chaudhary 25 yrs - Male":
+        - paragraph: Yadnesh Chaudhary
+        - paragraph: 25 yrs - Male
+      - cell "01/06/2000"
+      - cell "(987) 656-8974 yadnesh@mailinator.com":
+        - paragraph: (987) 656-8974
+        - paragraph: yadnesh@mailinator.com
+      - cell:
+        - paragraph
+        - paragraph
+      - cell "-"
+      - cell "-"
+      - cell
+      - cell "Active":
+        - paragraph: Active
+  - paragraph: "Current page: 1"
+  - paragraph: "Rows per page:"
+  - 'combobox "Rows per page: 10"': "10"
+  - paragraph: 1–10 of 164
+  - button "Go to previous page" [disabled]
+  - button "Go to next page"
+```
