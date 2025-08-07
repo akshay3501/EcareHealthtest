@@ -22,6 +22,7 @@ test('Schedule a new appointment with random slot selection', async ({ page }) =
 
   // All steps up to date selection are handled by scheduleAppointment
   // If you want to use the helper directly, you can do so after date selection:
+  //scheduleAppointment method handles all the steps from scheduling tab to date selection
   await appointmentPage.schedulingTab.waitFor({ state: 'visible' });
   await appointmentPage.schedulingTab.click();
   await expect(appointmentPage.appointmentsText).toBeVisible({ timeout: 10000 });
