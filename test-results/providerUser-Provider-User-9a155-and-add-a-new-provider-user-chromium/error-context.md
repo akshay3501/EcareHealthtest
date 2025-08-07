@@ -1,0 +1,140 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "Company-Logo"
+  - tablist:
+    - tab "Dashboard" [disabled]:
+      - paragraph: Dashboard
+    - tab "Scheduling" [selected]:
+      - paragraph: Scheduling
+    - tab "Patients":
+      - paragraph: Patients
+    - tab "Communications":
+      - paragraph: Communications
+    - tab "Collaboration":
+      - paragraph: Collaboration
+    - tab "Billing":
+      - paragraph: Billing
+    - tab "Reports":
+      - paragraph: Reports
+    - tab "Library":
+      - paragraph: Library
+    - tab "Settings":
+      - paragraph: Settings
+  - text: Create
+  - separator
+  - textbox "Find Patient"
+  - button
+  - button
+  - button
+- paragraph: Filters
+- text: August 2025
+- button "calendar view is open, switch to year view"
+- button "Previous month"
+- button "Next month"
+- grid "August 2025":
+  - row "Sunday Monday Tuesday Wednesday Thursday Friday Saturday":
+    - columnheader "Sunday": S
+    - columnheader "Monday": M
+    - columnheader "Tuesday": T
+    - columnheader "Wednesday": W
+    - columnheader "Thursday": T
+    - columnheader "Friday": F
+    - columnheader "Saturday": S
+  - rowgroup:
+    - row "1 2":
+      - gridcell
+      - gridcell
+      - gridcell
+      - gridcell
+      - gridcell
+      - gridcell "1"
+      - gridcell "2"
+    - row "3 4 5 6 7 8 9":
+      - gridcell "3" [selected]
+      - gridcell "4"
+      - gridcell "5"
+      - gridcell "6"
+      - gridcell "7"
+      - gridcell "8"
+      - gridcell "9"
+    - row "10 11 12 13 14 15 16":
+      - gridcell "10"
+      - gridcell "11"
+      - gridcell "12"
+      - gridcell "13"
+      - gridcell "14"
+      - gridcell "15"
+      - gridcell "16"
+    - row "17 18 19 20 21 22 23":
+      - gridcell "17"
+      - gridcell "18"
+      - gridcell "19"
+      - gridcell "20"
+      - gridcell "21"
+      - gridcell "22"
+      - gridcell "23"
+    - row "24 25 26 27 28 29 30":
+      - gridcell "24"
+      - gridcell "25"
+      - gridcell "26"
+      - gridcell "27"
+      - gridcell "28"
+      - gridcell "29"
+      - gridcell "30"
+    - row "31":
+      - gridcell "31"
+      - gridcell
+      - gridcell
+      - gridcell
+      - gridcell
+      - gridcell
+      - gridcell
+- paragraph: Search By Patient
+- combobox "Search & Select"
+- button "Open"
+- paragraph: Search By Provider
+- combobox "Search & Select"
+- button "Open"
+- button "Locations":
+  - paragraph: Locations
+- button "Status":
+  - paragraph: Status
+- button "Appointment Type":
+  - paragraph: Appointment Type
+- button "Mode":
+  - paragraph: Mode
+- button "Today"
+- button
+- button
+- paragraph: August 03 – 09
+- combobox "Select": Week
+- button "Open"
+- group:
+  - button [pressed]
+  - button
+- button "Schedule Appointment"
+- grid:
+  - rowgroup:
+    - row "Time Visit Type Patient Name Appointment Type Provider Reason For Visit Location Form Status Insurance Eligibility Action":
+      - columnheader "Time"
+      - columnheader "Visit Type"
+      - columnheader "Patient Name"
+      - columnheader "Appointment Type"
+      - columnheader "Provider"
+      - columnheader "Reason For Visit"
+      - columnheader "Location"
+      - columnheader "Form Status"
+      - columnheader "Insurance Eligibility"
+      - columnheader "Action"
+  - progressbar:
+    - img
+  - rowgroup
+  - paragraph: "Current page: 1"
+  - paragraph: "Rows per page:"
+  - 'combobox "Rows per page: 25"': "25"
+  - paragraph: 1–10 of 10
+  - button "Go to previous page" [disabled]
+  - button "Go to next page" [disabled]
+```
