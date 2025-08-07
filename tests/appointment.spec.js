@@ -12,6 +12,7 @@ async function selectRandomSlotOnAppointmentPage(appointmentPage) {
   await slots.nth(randomIndex).click();
 }
 
+//This will schedule a new appointment with random slot selection
 test('Schedule a new appointment with random slot selection', async ({ page }) => {
   const loginPage = new LoginPage(page);
   const appointmentPage = new AppointmentPage(page);
